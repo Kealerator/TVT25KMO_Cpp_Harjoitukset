@@ -60,12 +60,14 @@ int main() {
     cout << a << " * " << b << " = " << retSum(a, b) << endl;
 
     // retDiv
-    throw std::runtime_error("jakaja ei saa olla negatiivinen.");
 
     try{
         float result = retDiv(a,b);
-        cout << a << " * " << b << " = " << result << endl;
+        cout.precision(3);
+
+        cout << a << " / " << b << " = " << result << endl;
     } catch (runtime_error& e){
+        throw std::runtime_error("jakaja ei saa olla negatiivinen.");
         cout << "Error: " << e.what() << endl;
     }
 
@@ -82,7 +84,7 @@ void calcDiv(int num1, int num2) {
 
         double result = double(num1) / double(num2);
 
-    cout << result << endl;
+        cout << result << endl;
     }
 }
 
