@@ -59,6 +59,7 @@ int main() {
     cout.precision(3);
     cout << a << " / " << b << " = " << tulos << endl;
 
+    system("pause");
 
     return 0;
 }
