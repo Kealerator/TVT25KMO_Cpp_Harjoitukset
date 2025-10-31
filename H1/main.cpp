@@ -36,14 +36,9 @@ Lisää sovellukseen toiset summan ja osamäärän laskemiseen ja tulostamiseen 
  */
 
 #include <iostream>
+#include "functions.h"
 
 using namespace std;
-
-void calcSum(int, int);
-void calcDiv(int, int);
-
-int retSum(int, int);
-float retDiv(int, int);
 
 int main() {
     int a, b;
@@ -60,34 +55,12 @@ int main() {
     cout << a << " * " << b << " = " << retSum(a, b) << endl;
 
     // retDiv
+    float tulos = retDiv(a,b);
+    cout.precision(3);
+    cout << a << " / " << b << " = " << tulos << endl;
 
-    try{
-        float result = retDiv(a,b);
-        cout.precision(3);
-
-        cout << a << " / " << b << " = " << result << endl;
-    } catch (runtime_error& e){
-        throw std::runtime_error("jakaja ei saa olla negatiivinen.");
-        cout << "Error: " << e.what() << endl;
-    }
 
     return 0;
 }
 
-void calcSum(int num1, int num2) { cout << (num1 * num2) << endl; }
 
-void calcDiv(int num1, int num2) {
-
-    if (num2 == 0) {
-        cout << "Jakaja ei voi olla nolla!" << endl;
-    } else {
-
-        double result = double(num1) / double(num2);
-
-        cout << result << endl;
-    }
-}
-
-int retSum(int num1, int num2) { return num1 * num2; }
-
-float retDiv(int num1, int num2) { return float(num1) / float(num2); }
