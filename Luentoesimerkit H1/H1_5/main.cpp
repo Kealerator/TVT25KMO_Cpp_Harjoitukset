@@ -20,12 +20,23 @@ int main()
 {
     int num, doubledNum;
 
-    cout << "Anna kokonaisluku: ";
+    cout << "Anna positiivinen kokonaisluku: ";
     cin >> num;
 
-    doubledNum = tuplaa(num);
+    if (num < 0){
+        throw runtime_error("Kokonaisluvun kuului olla positiivinen!");
+    }
 
-    luvunTulostus(doubledNum);
+    try {
+
+        doubledNum = tuplaa(num);
+        luvunTulostus(doubledNum);
+
+    } catch (runtime_error& e) {
+        cout << e.what() << endl;
+        system("pause");
+    }
+
 
     system("pause");
     return 0;
