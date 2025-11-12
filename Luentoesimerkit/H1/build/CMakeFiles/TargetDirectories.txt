@@ -1,0 +1,7 @@
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/H1.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/edit_cache.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/rebuild_cache.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/list_install_components.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/install.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/install/local.dir
+C:/Users/Kelli/OneDrive - University of Oulu and Oamk/Kurssit/C++/TVT25KMO_Cpp_Harjoitukset/H1/build/CMakeFiles/install/strip.dir
