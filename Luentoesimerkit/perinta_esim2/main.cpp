@@ -2,6 +2,7 @@
 #include "televisio.h"
 
 #include <iostream>
+#include <memory>
 #include <vector>
 
 using namespace std;
@@ -38,6 +39,22 @@ int main()
 
     for(auto tuote : tuoteLista){
         tuote->tulostaTiedot();
+    }
+
+    // auto sanan ansiosta kääntäjä tunnistaa olion luokan
+
+
+    cout << "\n\nTuotelista smart pointtereilla: " << endl;
+
+    // Smart Pointerin käyttö:
+    vector<unique_ptr<Tuote>> tuoteVektori;
+
+    tuoteVektori.emplace_back(make_unique<Tuote>("Tuoli", 69.99));
+    tuoteVektori.emplace_back(make_unique<Televisio>("Samsung TV", 299.90, 23));
+    tuoteVektori.emplace_back(make_unique<Pesukone>("AE",499.90,1400,10));
+
+    for (auto& olio : tuoteVektori) {
+        olio->tulostaTiedot();
     }
 
     return 0;
