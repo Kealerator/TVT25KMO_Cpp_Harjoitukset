@@ -20,7 +20,13 @@ int main()
     objCat.sound();
     objCat.sayName();
 
-    Dog objDog;
+    Animal *objCat2 = new Cat();
+
+    objCat2->sound();
+    delete objCat2;
+    objCat2 = nullptr;
+
+
 
 
     return 0;
