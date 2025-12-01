@@ -6,7 +6,7 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>444</width>
+    <width>437</width>
     <height>591</height>
    </rect>
   </property>
@@ -109,13 +109,31 @@
      </rect>
     </property>
    </widget>
+   <widget class="QPushButton" name="btnOpenPage2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>220</y>
+      <width>91</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="text">
+     <string>Avaa sivu2</string>
+    </property>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>444</width>
+     <width>437</width>
      <height>21</height>
     </rect>
    </property>

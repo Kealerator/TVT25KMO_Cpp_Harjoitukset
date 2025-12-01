@@ -23,7 +23,11 @@ if(${QT_VERSION_MAJOR} GREATER_EQUAL 6)
     qt_add_executable(QtWidgetEsim1
         MANUAL_FINALIZATION
         ${PROJECT_SOURCES}
+        page2.h page2.cpp page2.ui
+        style.qss
+        resource.qrc
     )
+
 # Define target properties for Android with Qt 6 as:
 #    set_property(TARGET QtWidgetEsim1 APPEND PROPERTY QT_ANDROID_PACKAGE_SOURCE_DIR
 #                 ${CMAKE_CURRENT_SOURCE_DIR}/android)
